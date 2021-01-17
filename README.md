@@ -76,6 +76,7 @@ movie_with_seaborn.py
 * url_movies의 url로 각각의 영화 페이지에 접속하여 별점,좋아요,싫어요 데이터를 star,good,bad리스트에 추가합니다.
 
 * 이후 show함수를 통해 해당 내용을 출력하고 각 데이터를 summary, compare함수에 보내 시각화합니다.
+
 후기
 ---
 * matplotlib과 seaborn이라는 데이터 시각화 라이브러리를 통해 숫자 데이터를 보기쉽게 시각화 할 수 있었습니다.
