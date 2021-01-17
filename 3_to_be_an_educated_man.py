@@ -47,7 +47,10 @@ def IT_news(): # IT뉴스
     soup = default(url)
     news = soup.find("ul",attrs={"class":"type06_headline"}).find_all("li",limit=3)
     for new in news:
-        headline = new.find_all("dt")[1]
+        if new.find("dt", class_="photo"):
+            headline = new.find_all("dt")[1]
+        else:
+            headline = new.find("dt")
         link = headline.find("a")["href"]
         print("[IT 뉴스]")
         print(headline.get_text().strip())
